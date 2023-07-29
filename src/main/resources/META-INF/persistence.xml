@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.example_smart_jar_0.0.1-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.example.smart.models.Account</class>
+    <class>com.example.smart.models.Role</class>
+    <class>com.example.smart.models.Apartment</class>
+    <class>com.example.smart.models.Subject</class>
+    <class>com.example.smart.models.ClassSubject</class>
+    <class>com.example.smart.models.Teacher</class>
+    <class>com.example.smart.models.Ward</class>
+    <class>com.example.smart.models.Classes</class>
+    <class>com.example.smart.models.District</class>
+    <class>com.example.smart.models.Semester</class>
+    <class>com.example.smart.models.ScheduleDetail</class>
+    <class>com.example.smart.models.Room</class>
+    <class>com.example.smart.models.Attendance</class>
+    <class>com.example.smart.models.StudentClass</class>
+    <class>com.example.smart.models.Mark</class>
+    <class>com.example.smart.models.Province</class>
+    <class>com.example.smart.models.AttendanceTracking</class>
+    <class>com.example.smart.models.News</class>
+    <class>com.example.smart.models.Schedule</class>
+    <class>com.example.smart.models.Student</class>
+    <class>com.example.smart.models.StudentSubject</class>
+    <class>com.example.smart.models.Profile</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=DoAn;encrypt=false;trustServerCertificate=true"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123"/>
+    </properties>
+  </persistence-unit>
+</persistence>

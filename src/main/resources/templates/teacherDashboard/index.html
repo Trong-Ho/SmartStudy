@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Smart Study - Teacher</title>
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <th:block th:replace="~{teacherDashboard/components/header}"></th:block>
+    <th:block th:replace="~{teacherDashboard/components/navbar}"></th:block>
+    <div class="page-wrapper">
+        <th:block layout:fragment="content"></th:block>
+    </div>
+
+</div>
+
+<th:block layout:fragment="optional"></th:block>
+</body>
+</html>

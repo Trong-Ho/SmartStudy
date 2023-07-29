@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/thymeleaf.html to edit this template
+-->
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+
+    <body>
+        <form action="/dashboard/login" method="post">
+            <input type="text" name="username" class="form-control username" placeholder="Enter username..."/><br/>
+            <input type="text" name="password" class="form-control password" placeholder="Enter password..."/><br/>
+            <span class="error-msg" style="font-size: 14px;color:red" th:if="${msg !=null}" th:text="${msg}"></span>
+            <button type="submit" class="btn btn-info" style="font-size: 15px;width: 120px">Login</button>
+            
+        </form>
+
+    </body>
+</html>
